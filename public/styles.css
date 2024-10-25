@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+h2 {
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.container {
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding: 0 100px;
+    z-index: 1;
+}
+
+/* Navbar styles */
+
+nav img {
+    width: 200px;
+    height: auto;
+    padding-right: 20px;
+}
+.login-btn {
+    display: flex;
+    align-items: center;
+    right: 50px;
+    padding-right: 10px;
+}
+
+.btn-login {
+    background-color: #e50059;
+    color: white;
+    padding: 5px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn-login:hover {
+    background-color: #c1004d;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+}
+
+.nav-link:hover {
+    color: red;
+}
+/* endnav */
+
+/* Header section */
+.header {
+    background-color: #f4f4f4;
+    padding: 100px 0 50px 0;
+    text-align: start;
+    background-image: url(/logo/home-banner-v3.svg);
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: bottom;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Services icons container */
+.services-icons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical overflow */
+    align-items: center;
+}
+
+/* Individual service icon box */
+.service-icon {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: bold;
+    width: 200px;
+    text-wrap: wrap;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-icon:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon img {
+    width: 100px;
+    margin-bottom: 12px;
+}
+
+/* Insurance box */
+.insurance-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    transition: box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.insurance-box:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    margin-right: 15px;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.content h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+.content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+.arrow {
+    margin-left: 20px;
+    font-size: 3rem;
+    color: #666;
+}
+
+.arrow span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.layanan-khusus {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+/* Ensure that the container can scroll horizontally if its content overflows */
+.layanan-items-container {
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layanan-items {
+    display: flex; /* Align items in a row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    /* width: 100%;  */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical overflow */
+    align-items: center;
+}
+
+.layanan-item {
+    text-align: center;
+    width: 150px; /* Width of individual items */
+    padding-bottom: 20px;
+}
+
+.layanan-item img {
+    height: auto;
+    margin-bottom: 10px;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.layanan-item p {
+    font-size: 0.9rem; /* Adjusted font size for readability */
+}
+
+/* Penawaran menarik  */
+
+.penawaran-menarik {
+    position: relative;
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    /* width: 33.3333%; */
+    width: 30%;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.artikel-baru {
+    padding-bottom: 40px;
+}
+
+.artikel-cards {
+    display: flex;
+    justify-content: space-between;
+}
+.artikel-cards h3 {
+    font-size: 14px;
+}
+.artikel-card {
+    width: 23%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.artikel-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 5px 25px;
+    }
+
+    /* Responsive adjustments for navbar */
+    /* .navbar {
+        padding: 10px 20px;
+        justify-content: space-between;
+    } */
+
+    /* .nav-links {
+        display: none;
+    } */
+    .login-btn {
+        position: static;
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .header {
+        background-image: none;
+        padding: 10px;
+    }
+
+    .p1 {
+        font-size: 0.8rem;
+        max-width: 100%;
+    }
+
+    .service-icon {
+        width: 150px; /* Smaller width for smaller screens */
+        padding: 15px; /* Reduce padding */
+        font-size: 0.9rem; /* Adjust font size if needed */
+    }
+
+    .layanan-khusus {
+        padding: 5px 0 10px;
+    }
+    .layanan-items {
+        width: 900px;
+        padding: 0;
+    }
+
+    .layanan-item {
+        width: 100px; /* Width of individual items */
+    }
+
+    .layanan-khusus h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .penawaran-menarik {
+        margin-bottom: 10px;
+    }
+    .artikel-baru {
+        padding: 0;
+    }
+    .artikel-card h3 {
+        font-size: 11px;
+    }
+    .carousel-button {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-icon {
+        width: 120px; /* Even smaller width for very small screens */
+        padding: 10px; /* Further reduce padding */
+        font-size: 0.65rem; /* Adjust font size further if needed */
+    }
+}
+
+@media (max-width: 1020px) {
+    .arrow span {
+        transform: rotate(90deg);
+    }
+
+    .login-btn {
+        padding: 25px 15px 5px;
+    }
+}
+
+/* styles for contact */
